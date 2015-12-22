@@ -129,7 +129,7 @@ class veCanvas extends canvasHelpers{
 		this.ctx = this.elm.getContext("2d");
 		this.height = elm.height;
 		this.width = elm.width;
-		this.columns = 8;
+		this.columns = 12;
 		this.coordinates = {
 			columns: {
 				x : [],
@@ -190,10 +190,6 @@ class veCanvas extends canvasHelpers{
 	getScale(n){
 
 		var result = (n * (this.columnProperties.hColumns * 2)) / 100;
-
-		// var scale = (this.columnProperties.hColumns / 50);
-		// console.info('Reporting scale * n:', scale * n);
-		// return scale * n;
 		return result;
 	}
 
